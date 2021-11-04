@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aloe Vera</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        44.8deg,
+        rgba(255, 136, 102, 0.67) -53.1%,
+        rgba(255, 221, 136, 0.28) 49%
+      );
+    }
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      color: #629504;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: lighter;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      border: 2px solid #629504;
+      padding: 18px;
+      font-size: 20px;
+      border-radius: 30px;
+      background-color: #629504;
+      color: rgb(255, 255, 255);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 20px 0 10px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+
+    .important {
+      color: #629504;
+    }
+
+    .learnmore {
+      display: block;
+      margin-top: 12px;
+      text-decoration: none;
+      color: #629504;
+      font: 12px;
+    }
+
+    .learnmore:hover {
+      text-decoration: underline;
+      color: khaki;
+    }
+
+    .healing {
+      color: #629504;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #629504;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>The Wonders of Aloe Vera</h1>
+      <h2>Especially the <strong>healing powers</strong></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/273/original/aloevera.jpg?1630271555"
+        alt="Aloe Vera"
+      />
+
+      <p>
+        Aloe is a cactus-like plant that grows in hot, dry climates. It is
+        cultivated in subtropical regions around the world, including the
+        southern border areas of Texas, New Mexico, Arizona, and California.
+      </p>
+
+      <p>
+        Aloe vera’s mucilage is an extremely thick gel so it will quickly adhere
+        to and dry over a cut, acting as a natural bandage. For this same
+        reason, and due to its
+        <span class="healing"> <em> anti-inflammatory properties</em></span
+        >, it quickly sooths all types of burns, from accidents in the kitchen
+        to sunburns. These are the commonly known uses for the aloe vera plant’s
+        gel, but there are several other benefits.
+      </p>
+
+      <br />
+
+      <a
+        href="https://www.mindbodygreen.com/articles/keep-your-aloe-vera-gel-fresh-for-longer-storage-tips"
+        target="_blank"
+        class="learnStorage"
+      >
+        Learn how to properly store it!
+      </a>
+      <button class="try-button">Can Aloe Vera help me?</button>
+      <hr />
+      <p class="footer">
+        This page was built by
+        <a href="https://www.instagram.com/nuneza02/" target="_blank">
+          April Nuñez
+        </a>
+      </p>
+    </div>
+    <script>
+      function aloeHelp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let sunburn = prompt("Do you have sunburn?");
+
+        if (sunburn === "yes") {
+          alert(
+            "Yes it can help you " +
+              name +
+              "! 🙌 We'll be sending you additional instruction on how to properly apply!"
+          );
+        } else {
+          alert("No it cannot help you at the moment💔");
+        }
+      }
+
+      let helpButton = document.querySelector("button");
+      helpButton.addEventListener("click", aloeHelp);
+    </script>
+  </body>
+</html>
